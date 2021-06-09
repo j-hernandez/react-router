@@ -15,22 +15,23 @@ function App() {
   return (
       <div className="App">
         <Router>
-        <div>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </div>
-
+          <div>
+            <nav>
+              <Link to="/">Home</Link>
+              <Link to="/whatever">News Feed</Link>
+              <Link to="/about">About</Link>
+            </nav>
+          </div>
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/blog">
+            <Route path="/whatever">
+              <h1>Blog</h1>
               <Blog />
             </Route>
             <Route path="/about">
+              <h1>About</h1>
               <About />
             </Route>
           </Switch>
